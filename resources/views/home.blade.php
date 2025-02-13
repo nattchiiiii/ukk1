@@ -13,8 +13,7 @@
                             {{ session('status') }}
                         </div>
                     @endif
-
-                    {{ __('You are logged in!') }}
+                        <p>Selamat datang di aplikasi barang, silahkkan klik menu bagian kanan atas untuk mulai menggunakan aplikasi ini !   </p>
                 </div>
             </div>
         </div>

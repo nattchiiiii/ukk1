@@ -1,7 +1,8 @@
 {
     "private": true,
     "scripts": {
-        "dev": "concurrently \"npm run dev\" \"php artisan serve\"",
+        "dev": "concurrently \"npm run vite\" \"php artisan serve\"",
+        "vite": "vite",
         "build": "vite build"
     },
     "devDependencies": {
