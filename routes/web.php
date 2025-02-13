@@ -29,5 +29,10 @@ Route::get('/', function()
     Return redirect('/login');
 });
 
-Route::resource('barang', BarangController::class);
-Route::resource('penjualan', PenjualanController::class);
+Auth::routes();
+
+Route::middleware(['auth'])->group(function()
+{
+    Route::resource('barang', BarangController::class);
+    Route::resource('penjualan', PenjualanController::class);
+});
